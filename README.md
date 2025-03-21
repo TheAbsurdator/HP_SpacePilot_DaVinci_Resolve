@@ -1,0 +1,2 @@
+# HP_SpacePilot
+HP_Spacepilot_DaVinci_Resolve_Config
