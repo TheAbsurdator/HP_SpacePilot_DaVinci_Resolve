@@ -295,7 +295,7 @@
             <ActionID>KB_Space</ActionID>
           </Output>
         </Button>
-        <!--LCD_BUTTON_T-->
+        <!--BUTTON_T-->
         <Button>
           <Input>
             <ActionID>HIDButton_7</ActionID>
