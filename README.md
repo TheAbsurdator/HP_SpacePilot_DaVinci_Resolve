@@ -1,4 +1,4 @@
-# HP_SpacePilot
+# HP_SpacePilot_DaVinci_Resolve
 HP_Spacepilot_DaVinci_Resolve_Config
 
 App Version:
