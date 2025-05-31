@@ -12,7 +12,7 @@
     <Access/>
   </CfgProperties>
   <Settings>
-    <OverallScale>1.00</OverallScale>
+    <OverallScale>1.20</OverallScale>
   </Settings>
   <Devices>
     <Device>
@@ -21,7 +21,7 @@
       <ProductID>0</ProductID>
       <InheritsFrom>Standard 3D Mouse</InheritsFrom>
       <Axis>
-        <Enabled>false</Enabled>
+        <Enabled>true</Enabled>
         <Input>
           <ActionID>HIDMultiAxis_Rx</ActionID>
           <Min>-512</Min>
@@ -31,8 +31,9 @@
           <ActionID>HIDMouse_Wheel</ActionID>
         </Output>
       </Axis>
+      <!--Rotate_LEFT_AXIS-Rz-->
+      <!--Function_Fine_Frame_Scroll_timeline_left-->
       <Axis>
-        <!--obroty lewo-->
         <Enabled>true</Enabled>
         <Input>
           <ActionID>HIDMultiAxis_Rz</ActionID>
@@ -42,14 +43,16 @@
         </Input>
         <Output>
           <ActionID>KB_Keystroke</ActionID>
+          <MaxEventRate>50.0000</MaxEventRate>
           <RepeatStyle>Auto</RepeatStyle>
           <KeyStroke>
             <Key>50</Key>
           </KeyStroke>
         </Output>
       </Axis>
-	  <Axis>
-        <!--obroty prawo-->
+      <!--Rotate_RIGHT_-AXIS-Rz-->
+      <!--Function_Fine_Frame_Scroll_timeline_right-->
+      <Axis>
         <Enabled>true</Enabled>
         <Input>
           <ActionID>HIDMultiAxis_Rz</ActionID>
@@ -59,20 +62,131 @@
         </Input>
         <Output>
           <ActionID>KB_Keystroke</ActionID>
+          <MaxEventRate>50.0000</MaxEventRate>
           <RepeatStyle>Auto</RepeatStyle>
           <KeyStroke>
             <Key>4F</Key>
           </KeyStroke>
         </Output>
       </Axis>
+      <!--PAN_LEFT-->
       <Axis>
-        <Enabled>false</Enabled>
+        <Enabled>true</Enabled>
         <Input>
           <ActionID>HIDMultiAxis_X</ActionID>
           <Min>-512</Min>
-          <Max>511</Max>
+          <Max>0</Max>
+          <Deadband>300</Deadband>
         </Input>
         <Output>
+          <ActionID>KB_Keystroke</ActionID>
+          <MaxEventRate>5.0000</MaxEventRate>
+          <RepeatStyle>Auto</RepeatStyle>
+          <KeyStroke>
+            <Key>51</Key>
+          </KeyStroke>
+        </Output>
+      </Axis>
+      <!--PAN_RIGHT-->
+      <Axis>
+        <Enabled>true</Enabled>
+        <Input>
+          <ActionID>HIDMultiAxis_X</ActionID>
+          <Min>0</Min>
+          <Max>511</Max>
+          <Deadband>300</Deadband>
+        </Input>
+        <Output>
+          <ActionID>KB_Keystroke</ActionID>
+          <MaxEventRate>5.0000</MaxEventRate>
+          <RepeatStyle>Auto</RepeatStyle>
+          <KeyStroke>
+            <Key>52</Key>
+          </KeyStroke>
+        </Output>
+      </Axis>
+      <!--UP-DOWN-->
+      <!--Function_ZOOM_IN-OUT-->
+      <Axis>
+        <Enabled>true</Enabled>
+        <Input>
+          <ActionID>HIDMultiAxis_Z</ActionID>
+          <Min>-512</Min>
+          <Max>511</Max>
+          <Deadband>200</Deadband>
+        </Input>
+        <Output>
+          <Modifiers>
+            <Modifier>Alt</Modifier>
+            <Modifier>Alt</Modifier>
+            <Modifier>Alt</Modifier>
+            <Modifier>Alt</Modifier>
+            <Modifier>Alt</Modifier>
+            <Modifier>Alt</Modifier>
+            <Modifier>Alt</Modifier>
+            <Modifier>Alt</Modifier>
+            <Modifier>Alt</Modifier>
+            <Modifier>Alt</Modifier>
+            <Modifier>Alt</Modifier>
+            <Modifier>Alt</Modifier>
+            <Modifier>Alt</Modifier>
+            <Modifier>Alt</Modifier>
+            <Modifier>Alt</Modifier>
+            <Modifier>Alt</Modifier>
+            <Modifier>Alt</Modifier>
+            <Modifier>Alt</Modifier>
+            <Modifier>Alt</Modifier>
+            <Modifier>Alt</Modifier>
+            <Modifier>Alt</Modifier>
+            <Modifier>Alt</Modifier>
+            <Modifier>Alt</Modifier>
+            <Modifier>Alt</Modifier>
+            <Modifier>Alt</Modifier>
+            <Modifier>Alt</Modifier>
+            <Modifier>Alt</Modifier>
+            <Modifier>Alt</Modifier>
+            <Modifier>Alt</Modifier>
+            <Modifier>Alt</Modifier>
+            <Modifier>Alt</Modifier>
+            <Modifier>Alt</Modifier>
+            <Modifier>Alt</Modifier>
+            <Modifier>Alt</Modifier>
+            <Modifier>Alt</Modifier>
+            <Modifier>Alt</Modifier>
+            <Modifier>Alt</Modifier>
+            <Modifier>Alt</Modifier>
+            <Modifier>Alt</Modifier>
+            <Modifier>Alt</Modifier>
+            <Modifier>Alt</Modifier>
+            <Modifier>Alt</Modifier>
+            <Modifier>Alt</Modifier>
+            <Modifier>Alt</Modifier>
+            <Modifier>Alt</Modifier>
+            <Modifier>Alt</Modifier>
+            <Modifier>Alt</Modifier>
+            <Modifier>Alt</Modifier>
+            <Modifier>Alt</Modifier>
+            <Modifier>Alt</Modifier>
+            <Modifier>Alt</Modifier>
+            <Modifier>Alt</Modifier>
+            <Modifier>Alt</Modifier>
+            <Modifier>Alt</Modifier>
+            <Modifier>Alt</Modifier>
+            <Modifier>Alt</Modifier>
+            <Modifier>Alt</Modifier>
+            <Modifier>Alt</Modifier>
+            <Modifier>Alt</Modifier>
+            <Modifier>Alt</Modifier>
+            <Modifier>Alt</Modifier>
+            <Modifier>Alt</Modifier>
+            <Modifier>Alt</Modifier>
+            <Modifier>Alt</Modifier>
+            <Modifier>Alt</Modifier>
+            <Modifier>Alt</Modifier>
+            <Modifier>Alt</Modifier>
+            <Modifier>Alt</Modifier>
+            <Modifier>Alt</Modifier>
+          <Modifier>Alt</Modifier><Modifier>Alt</Modifier></Modifiers>
           <ActionID>HIDMouse_Wheel</ActionID>
         </Output>
       </Axis>
@@ -87,20 +201,9 @@
           <ActionID>HIDMouse_Wheel</ActionID>
         </Output>
       </Axis>
+      <!--TILT-LEFT-RIGHT-->
       <Axis>
-        <Enabled>false</Enabled>
-        <Input>
-          <ActionID>HIDMultiAxis_Z</ActionID>
-          <Min>-512</Min>
-          <Max>511</Max>
-        </Input>
-        <Output>
-          <ActionID>HIDMouse_Wheel</ActionID>
-        </Output>
-      </Axis>
-      <Axis>
-        <!--Bujanie lewo prawo-->
-        <Enabled>false</Enabled>
+        <Enabled>true</Enabled>
         <Input>
           <ActionID>HIDMultiAxis_Ry</ActionID>
           <Min>-512</Min>
@@ -120,76 +223,85 @@
       <ButtonBank Default="true">
         <Name>STR_DEFAULT_BUTTONBANK</Name>
         <ID>Default</ID>
+        <!--LCD_BUTTON_1-->
         <Button>
           <Input>
             <ActionID>HIDButton_1</ActionID>
           </Input>
           <Output>
-            <ActionID>Ctrl+Shift+[</ActionID>
+            <ActionID>FULL_SCR_PREV</ActionID>
           </Output>
         </Button>
+        <!--LCD_BUTTON_5-->
         <Button>
           <Input>
             <ActionID>HIDButton_5</ActionID>
           </Input>
           <Output>
-            <ActionID>Macro_Undo</ActionID>
+            <ActionID>MARK_IN</ActionID>
           </Output>
         </Button>
+        <!--LCD_BUTTON_6-->
         <Button>
           <Input>
             <ActionID>HIDButton_6</ActionID>
           </Input>
           <Output>
-            <ActionID>Macro_Redo</ActionID>
+            <ActionID>MARK_OUT</ActionID>
           </Output>
         </Button>
+        <!--BUTTON_L-->
         <Button>
           <Input>
             <ActionID>HIDButton_8</ActionID>
           </Input>
           <Output>
-            <ActionID>Down</ActionID>
+            <ActionID>CUT_DEL_REV</ActionID>
           </Output>
         </Button>
+		<!--BUTTON_R-->
         <Button>
           <Input>
             <ActionID>HIDButton_9</ActionID>
           </Input>
           <Output>
-            <ActionID>Up</ActionID>
+            <ActionID>CUT_DEL_FWD</ActionID>
           </Output>
         </Button>
+        <!--LCD_BUTTON_2-->
         <Button>
           <Input>
             <ActionID>HIDButton_2</ActionID>
           </Input>
           <Output>
-            <ActionID>Ctrl+Shift+]</ActionID>
+            <ActionID>RENDER</ActionID>
           </Output>
         </Button>
+        <!--LCD_BUTTON_3-->
         <Button>
           <Input>
             <ActionID>HIDButton_3</ActionID>
           </Input>
           <Output>
-            <ActionID>Macro_Paste</ActionID>
+            <ActionID>Driver_ShowDriverGUI</ActionID>
           </Output>
         </Button>
+		<!--BUTTON_F-->
         <Button>
           <Input>
             <ActionID>HIDButton_10</ActionID>
           </Input>
           <Output>
-            <ActionID>End</ActionID>
+            <ActionID>KB_Space</ActionID>
           </Output>
         </Button>
+        <!--LCD_BUTTON_T-->
         <Button>
           <Input>
             <ActionID>HIDButton_7</ActionID>
           </Input>
           <Output>
-            <ActionID>Home</ActionID>
+            <ActionID>CUT</ActionID>
           </Output>
         </Button>
         <Button>
@@ -200,12 +312,13 @@
             <ActionID>Space</ActionID>
           </Output>
         </Button>
+        <!--BUTTON_Dom-->
         <Button>
           <Input>
             <ActionID>HIDButton_19</ActionID>
           </Input>
           <Output>
-            <ActionID>Ctrl+B</ActionID>
+            <ActionID>HIDMouse_Middle</ActionID>
           </Output>
         </Button>
         <Button>
@@ -213,7 +326,39 @@
             <ActionID>HIDButton_20</ActionID>
           </Input>
           <Output>
-            <ActionID>Space</ActionID>
+            <KeyStroke>
+              <Modifiers>
+                <Modifier>Control</Modifier>
+              </Modifiers>
+              <Key>5</Key>
+            </KeyStroke>
+          </Output>
+        </Button>
+        <!--LCD_BUTTON_4-->
+        <Button>
+          <Input>
+            <ActionID>HIDButton_4</ActionID>
+          </Input>
+          <Output>
+            <ActionID>Driver_Toggle_3DxNumPad</ActionID>
+          </Output>
+        </Button>
+		<!--BUTTON_Plus-->
+        <Button>
+          <Input>
+            <ActionID>HIDButton_17</ActionID>
+          </Input>
+          <Output>
+            <ActionID>PLAY_FORWARD</ActionID>
+          </Output>
+        </Button>
+		<!--BUTTON_Reverse-->
+        <Button>
+          <Input>
+            <ActionID>HIDButton_18</ActionID>
+          </Input>
+          <Output>
+            <ActionID>PLAY_REVERSE</ActionID>
           </Output>
         </Button>
       </ButtonBank>
@@ -221,7 +366,7 @@
   </Devices>
   <MacroTable>
     <MacroEntry>
-      <ID>Ctrl+Shift+[</ID>
+      <ID>CUT_DEL_REV</ID>
       <KeyStroke>
         <Modifiers>
           <Modifier>Control</Modifier>
@@ -243,7 +388,7 @@
       </KeyStroke>
     </MacroEntry>
     <MacroEntry>
-      <ID>Ctrl+Shift+]</ID>
+      <ID>CUT_DEL_FWD</ID>
       <KeyStroke>
         <Modifiers>
           <Modifier>Control</Modifier>
@@ -271,12 +416,51 @@
       </KeyStroke>
     </MacroEntry>
     <MacroEntry>
-      <ID>Ctrl+B</ID>
+      <ID>CUT</ID>
       <KeyStroke>
         <Modifiers>
           <Modifier>Control</Modifier>
         </Modifiers>
         <Key>5</Key>
+      </KeyStroke>
+    </MacroEntry>
+    <MacroEntry>
+      <ID>FULL_SCR_PREV</ID>
+      <KeyStroke>
+        <Modifiers>
+          <Modifier>Control</Modifier>
+        </Modifiers>
+        <Key>9</Key>
+      </KeyStroke>
+    </MacroEntry>
+    <MacroEntry>
+      <ID>RENDER</ID>
+      <KeyStroke>
+        <Key>44</Key>
+      </KeyStroke>
+    </MacroEntry>
+    <MacroEntry>
+      <ID>MARK_IN</ID>
+      <KeyStroke>
+        <Key>C</Key>
+      </KeyStroke>
+    </MacroEntry>
+    <MacroEntry>
+      <ID>MARK_OUT</ID>
+      <KeyStroke>
+        <Key>12</Key>
+      </KeyStroke>
+    </MacroEntry>
+    <MacroEntry>
+      <ID>PLAY_REVERSE</ID>
+      <KeyStroke>
+        <Key>D</Key>
+      </KeyStroke>
+    </MacroEntry>
+    <MacroEntry>
+      <ID>PLAY_FORWARD</ID>
+      <KeyStroke>
+        <Key>F</Key>
       </KeyStroke>
     </MacroEntry>
   </MacroTable>
