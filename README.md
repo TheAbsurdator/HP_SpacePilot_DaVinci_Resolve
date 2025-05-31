@@ -7,3 +7,7 @@ App Version:
 
 App-Specific XML config file location:
 C:\Users\%USERNAME%\AppData\Roaming\3Dconnexion\3DxWare\Cfg
+
+
+
+The Aim of the project is to use an inexpensive 6 axis controller to navigate through Davinci Resolve and allow fast clip cutting and editing.
