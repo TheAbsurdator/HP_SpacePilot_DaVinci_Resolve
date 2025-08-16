@@ -6,7 +6,7 @@ App Version:
 
 
 App-Specific XML config file location:
-C:\Users\%USERNAME%\AppData\Roaming\3Dconnexion\3DxWare\Cfg
+C:\Users\\%USERNAME%\AppData\Roaming\3Dconnexion\3DxWare\Cfg
 
 
 
